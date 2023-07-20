@@ -41,6 +41,7 @@ def standardize_address(address:str) -> str:
     address = address.lower()
     address = address.replace('.', '')
     address = address.replace('no ', '#')
+    address = address.replace('dg', 'diagonal')
 
     # define regex to substitude keywords for whitespace
     re_gral = re.compile(r'local.*|of.*|oficina.*|pi.*|piso.*|cs.*|consultorio.*|consultorios.*')
